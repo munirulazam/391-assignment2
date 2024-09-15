@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="assets/quiz.css">
+</head>
+<body>
+<div class="container">
+    <h1>Quiz</h1>
+    <div id="quiz-setup">
+        <label for="num-questions">Number of questions:</label>
+        <input type="number" id="num-questions" min="1" max="10" value="5">
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+    <div id="quiz-container" style="display:none;">
+        <div id="question-container"></div>
+        <button id="submit-quiz" onclick="submitQuiz()">Submit Quiz</button>
+    </div>
+    <div id="result-container" style="display:none;"></div>
+</div>
+<script src="quiz.js"></script>
+</body>
+</html>
+

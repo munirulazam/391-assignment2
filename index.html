@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Fortune box -->
+    <div class="fortune-box">
+        <p id="fortune"></p>
+    </div>
+    
+    <!-- Currency Converter -->
+    <div class="container">
+        <h1 class="currency_header">Currency Converter</h1>
+        <div class="currency-fields">
+            <label class="currency_label" for="usd">USD</label>
+            <input type="number" id="usd" placeholder="" oninput="convertCurrency('usd')">
+        </div>
+        <div class="currency-fields">
+            <label class="currency_label" for="gbp">GBP</label>
+            <input type="number" id="gbp" placeholder="" oninput="convertCurrency('gbp')"> 
+        </div>
+        <div class="currency-fields">
+            <label class="currency_label" for="cad">CAD</label>
+            <input type="number" id="cad" placeholder="" oninput="convertCurrency('cad')">
+        </div>
+        <div class="currency-fields">
+            <label class="currency_label" for="eur">EUR</label>
+            <input type="number" id="eur" placeholder="" oninput="convertCurrency('eur')">
+        </div>
+        <div class="currency-fields">
+            <label class="currency_label" for="aud">AUD</label>
+            <input type="number" id="aud" placeholder="" oninput="convertCurrency('aud')">
+        </div>
+        <button class="clear-button" onclick="clearFields()">Clear</button>
+    </div>
+
+    <footer>
+        <!-- Footer content -->
+         <button> <a href="quiz.html"/> quiz </button>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
